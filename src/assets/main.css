@@ -1,0 +1,198 @@
+@import 'tailwindcss';
+
+@theme {
+  --*: initial;
+
+  /* Colors */
+  --color-primary: '#1A4D8F';
+  --color-primary-hovered: '#215183';
+  --color-primary-clicked: '#16395C';
+  --color-text: '#4D4D4D';
+  --color-text-on-dark: '#E3E3E3';
+  --color-dark: '#11273D';
+  --color-white: #ffffff;
+  --color-surface-subtle: '#ECF4FA';
+  --color-surface-alt: '#F6FBFF';
+  --color-surface-inner-dark: '#3C536A';
+  --color-surface-light: '#FEFEFE';
+  --color-surface-medium: '#BFD2E6';
+  --color-stroke: '#D3E0EB';
+  --color-stroke-light: '#EBF3FA';
+  --color-stroke-subtle: '#EEF6FF';
+  --color-stroke-on-dark: '#5D6F80';
+  --color-icon-stroke-on-dark: '#283C50';
+  --color-section-soft-fade: '#ECF4FA';
+
+  /* Sizes */
+  --spacing-0: 0;
+  --spacing-1: 1px;
+  --spacing-2: 2px;
+  --spacing-3: 4px;
+  --spacing-4: 8px;
+  --spacing-5: 10px;
+  --spacing-5: 12px;
+  --spacing-6: 14px;
+  --spacing-7: 16px;
+  --spacing-8: 18px;
+  --spacing-9: 20px;
+  --spacing-10: 24px;
+  --spacing-11: 32px;
+  --spacing-12: 36px;
+  --spacing-13: 42px;
+  --spacing-14: 56px;
+  --spacing-15: 75px;
+  --spacing-16: 80px;
+
+  /* Text sizes */
+  --text-sm: var(--spacing-4);
+  --text-xmd: var(--spacing-5);
+  --text-md: var(--spacing-6);
+  --text-xlg: var(--spacing-7);
+  --text-lg: var(--spacing-8);
+  --text-xl: var(--spacing-10);
+  --text-2xl: var(--spacing-11);
+  --text-3xl: var(--spacing-13);
+  --text-4xl: var(--spacing-14);
+  --text-5xl: var(--spacing-15);
+
+  /* Radius */
+  --radius-0: var(--spacing-0);
+  --radius-sm: var(--spacing-4);
+  --radius-md: var(--spacing-5);
+  --radius-lg: var(--spacing-6);
+
+  /* Breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 640px;
+  --breakpoint-lg: 768px;
+  --breakpoint-xl: 1024px;
+  --breakpoint-2xl: 1280px;
+  --breakpoint-3xl: 1536px;
+  --breakpoint-4xl: 1920px;
+
+  /* Fonts */
+  --font-clashDisplay: 'Clash Display', sans-serif;
+  --font-instrumentSans: 'Instrument Sans', sans-serif;
+}
+
+/* ====== Complete texts setup ====== */
+.d-headline-h1-hero {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-5xl);
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h1 {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-3xl);
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h2-hero {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-4xl);
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h2 {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-2xl);
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h3 {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-xl);
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h4 {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-lg);
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h5 {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-xlg);
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.d-headline-h6 {
+  font-family: var(--font-clashDisplay);
+  font-weight: 500;
+  font-size: var(--text-md);
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.d-body-regular-xl {
+  font-family: var(--font-instrumentSans);
+  font-weight: 400;
+  font-size: var(--text-lg);
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.d-body-regular-l {
+  font-family: var(--font-instrumentSans);
+  font-weight: 400;
+  font-size: var(--text-xlg);
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.d-body-regular-m {
+  font-family: var(--font-instrumentSans);
+  font-weight: 400;
+  font-size: var(--text-md);
+  line-height: 160%;
+  letter-spacing: 0%;
+}
+
+.d-body-regular-s {
+  font-family: var(--font-instrumentSans);
+  font-weight: 400;
+  font-size: var(--text-xmd);
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.d-body-regular-xs {
+  font-family: var(--font-instrumentSans);
+  font-weight: 400;
+  font-size: var(--text-sm);
+  line-height: 180%;
+  letter-spacing: -2%;
+}
+
+.d-body-medium-l {
+  font-family: var(--font-instrumentSans);
+  font-weight: 500;
+  font-size: var(--text-xlg);
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.d-body-semibold-m {
+  font-family: var(--font-instrumentSans);
+  font-weight: 600;
+  font-size: var(--text-md);
+  line-height: 150%;
+  letter-spacing: 0%;
+}
