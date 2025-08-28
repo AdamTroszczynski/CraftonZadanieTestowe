@@ -4,11 +4,11 @@
   </section>
 </template>
 <script setup lang="ts">
-import InvestmentsSlider from '@/widgets/InvestmentsSlider.vue';
+import InvestmentsSlider from '@/views/mainView/widgets/InvestmentsSlider.vue';
 
 const slides = [
   {
-    imgSrc: '/photo.webp',
+    imgSrc: '/photos/slidePhoto.webp',
     location: 'Poznań 20-300',
     header: 'Poznań Park',
     description:
@@ -16,7 +16,7 @@ const slides = [
     link: '',
   },
   {
-    imgSrc: '/photo.webp',
+    imgSrc: '/photos/slidePhoto.webp',
     location: 'Poznań 20-300',
     header: 'Poznań Park',
     description:

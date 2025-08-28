@@ -1,10 +1,10 @@
 <template>
   <header class="relative w-full">
     <div
-      class="border-stroke-light 3xl:px-17 relative z-30 flex items-center justify-between border-b bg-white px-10 py-7 xl:py-8 2xl:px-15"
+      class="border-stroke-light 3xl:px-18 relative z-30 flex items-center justify-between border-b bg-white px-11 py-8 xl:py-9 2xl:px-16"
     >
       <LogoIcon />
-      <nav aria-label="desktopNavigation" class="3xl:gap-11 hidden gap-6 xl:flex 2xl:gap-10">
+      <nav aria-label="desktopNavigation" class="3xl:gap-12 hidden gap-7 xl:flex 2xl:gap-11">
         <LinkButton>Home</LinkButton>
         <LinkButton :with-arrow="true">O nas</LinkButton>
         <LinkButton :with-arrow="true">Nasze Inwestycje</LinkButton>
@@ -12,9 +12,9 @@
         <LinkButton>Wynajmij</LinkButton>
       </nav>
 
-      <BaseButton :is-blue="true" :is-smaller="true" icon="arrow" class="hidden xl:flex"
-        >Kontakt</BaseButton
-      >
+      <BaseButton :is-blue="true" :is-smaller="true" icon="arrow" class="hidden xl:flex">
+        Kontakt
+      </BaseButton>
 
       <button @click="isMenuOpen = !isMenuOpen" class="xl:hidden">
         <BaseIcon name="menu" :width="21" :height="18" color="dark" />
@@ -23,10 +23,10 @@
 
     <nav
       aria-label="mobileNavigation"
-      class="shadow-base absolute right-0 left-0 z-10 flex w-full flex-col gap-9 bg-white px-10 py-9 transition-transform duration-500 ease-in-out xl:hidden"
+      class="shadow-base absolute right-0 left-0 z-10 flex w-full flex-col gap-10 bg-white px-11 py-10 transition-transform duration-500 ease-in-out xl:hidden"
       :class="isMenuOpen ? 'translate-y-0' : '-translate-y-[400px]'"
     >
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-7">
         <LinkButton>Home</LinkButton>
         <LinkButton :with-arrow="true">O nas</LinkButton>
         <LinkButton :with-arrow="true">Nasze Inwestycje</LinkButton>

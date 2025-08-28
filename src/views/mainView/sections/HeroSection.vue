@@ -1,5 +1,5 @@
 <template>
-  <section class="3xl:px-17 3xl:py-17 flex flex-col gap-9 px-10 py-15 2xl:px-15">
+  <section class="3xl:p-18 flex flex-col gap-10 px-11 py-16 2xl:px-16">
     <h1
       class="d-headline-h1 text-dark lg:d-headline-h1-hero max-w-[1038px] text-center uppercase lg:text-start"
     >
@@ -9,7 +9,7 @@
       W RealEstate nieruchomości to coś więcej niż tylko budynki - to miejsca, w których powstają
       historie, rozwijają się biznesy i spełniają marzenia.
     </p>
-    <div class="flex flex-col gap-9 py-5 lg:flex-row">
+    <div class="flex flex-col gap-10 py-5 lg:flex-row">
       <BaseButton :is-blue="true" icon="arrow">Nasze inwestycje</BaseButton>
       <BaseButton :is-white="true">Poznajmy się</BaseButton>
     </div>

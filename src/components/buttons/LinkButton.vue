@@ -1,6 +1,7 @@
 <template>
   <a
     class="xl:d-headline-h5 d-headline-h4 text-dark hover:text-text active:stroke-on-dark flex cursor-pointer items-center uppercase"
+    :href="link"
     :class="isActive ? 'text-primary' : 'text-dark'"
   >
     <slot />
@@ -19,6 +20,10 @@ defineProps({
   withArrow: {
     type: Boolean,
     default: false,
+  },
+  link: {
+    type: String,
+    required: false,
   },
 });
 </script>

@@ -22,6 +22,7 @@
   --color-stroke-on-dark: #5d6f80;
   --color-icon-stroke-on-dark: #283c50;
   --color-section-soft-fade: #ecf4fa;
+  --color-error: #b3261e;
 
   /* Sizes */
   --spacing-0: 0;
@@ -30,31 +31,31 @@
   --spacing-3: 4px;
   --spacing-4: 8px;
   --spacing-5: 10px;
-  --spacing-5: 12px;
-  --spacing-6: 14px;
-  --spacing-7: 16px;
-  --spacing-8: 18px;
-  --spacing-9: 20px;
-  --spacing-10: 24px;
-  --spacing-11: 28px;
-  --spacing-12: 32px;
-  --spacing-13: 36px;
-  --spacing-14: 42px;
-  --spacing-15: 56px;
-  --spacing-16: 75px;
-  --spacing-17: 80px;
+  --spacing-6: 12px;
+  --spacing-7: 14px;
+  --spacing-8: 16px;
+  --spacing-9: 18px;
+  --spacing-10: 20px;
+  --spacing-11: 24px;
+  --spacing-12: 28px;
+  --spacing-13: 32px;
+  --spacing-14: 36px;
+  --spacing-15: 42px;
+  --spacing-16: 56px;
+  --spacing-17: 75px;
+  --spacing-18: 80px;
 
   /* Text sizes */
   --text-sm: var(--spacing-4);
   --text-xmd: var(--spacing-5);
-  --text-md: var(--spacing-6);
-  --text-xlg: var(--spacing-7);
-  --text-lg: var(--spacing-8);
-  --text-xl: var(--spacing-10);
-  --text-2xl: var(--spacing-12);
-  --text-3xl: var(--spacing-14);
-  --text-4xl: var(--spacing-15);
-  --text-5xl: var(--spacing-16);
+  --text-md: var(--spacing-7);
+  --text-xlg: var(--spacing-8);
+  --text-lg: var(--spacing-9);
+  --text-xl: var(--spacing-11);
+  --text-2xl: var(--spacing-13);
+  --text-3xl: var(--spacing-15);
+  --text-4xl: var(--spacing-16);
+  --text-5xl: var(--spacing-17);
 
   /* Fonts weigth */
   --font-weight-normal: 400;
@@ -65,8 +66,8 @@
   /* Radius */
   --radius-0: var(--spacing-0);
   --radius-sm: var(--spacing-4);
-  --radius-md: var(--spacing-5);
-  --radius-lg: var(--spacing-6);
+  --radius-md: var(--spacing-6);
+  --radius-lg: var(--spacing-7);
 
   /* Breakpoints */
   --breakpoint-xs: 320px;
@@ -77,6 +78,9 @@
   --breakpoint-2xl: 1280px;
   --breakpoint-3xl: 1440px;
   --breakpoint-4xl: 1920px;
+
+  /* Custom breakpoints */
+  --breakpoint-1075: 1075px;
 
   /* Fonts */
   --font-clashDisplay: 'Clash Display', sans-serif;
