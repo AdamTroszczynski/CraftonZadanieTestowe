@@ -1,5 +1,5 @@
 <template>
-  <div class="3xl:flex 3xl:flex-col 3xl:items-center">
+  <div class="3xl:flex 3xl:flex-col 3xl:items-center overflow-x-hidden">
     <MainView />
   </div>
 </template>
