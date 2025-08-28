@@ -1,6 +1,6 @@
 <template>
   <TheNavbar />
-  <div class="max-w-[1440px]">
+  <div class="mt-[82px] max-w-[1440px]">
     <HeroSection />
     <TextInvestmentsSection />
     <SliderSection />
