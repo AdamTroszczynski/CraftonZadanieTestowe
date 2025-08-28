@@ -1,10 +1,11 @@
 <template>
-  <section>
+  <SectionRef id="investments">
     <InvestmentsSlider :slides="slides" />
-  </section>
+  </SectionRef>
 </template>
 <script setup lang="ts">
 import InvestmentsSlider from '@/views/mainView/widgets/InvestmentsSlider.vue';
+import SectionRef from '@/widgets/SectionRef.vue';
 
 const slides = [
   {
