@@ -47,7 +47,7 @@ const setClasses = computed<string>(() => {
     props.isBlue &&
       'bg-primary text-white hover:bg-primary-hovered hover:text-surface-subtle active:bg-primary-clicked active:text-surface-subtle',
     props.isWhite &&
-      'bg-surface-light text-dark border border-stroke hover:text-on-dark active:border-surface-medium active:text-surface-medium',
+      'bg-surface-light text-dark border border-stroke hover:text-text-on-dark active:border-surface-medium active:text-surface-medium',
     props.isSmaller ? 'px-10 py-8' : 'xl:px-13 xl:py-10 py-8',
   ]
     .filter(Boolean)
