@@ -1,15 +1,25 @@
 <template>
-  <header class="relative w-full">
+  <header class="fixed top-0 z-50 w-full">
     <div
       class="border-stroke-light 3xl:px-18 relative z-30 flex items-center justify-between border-b bg-white px-11 py-8 xl:py-9 2xl:px-16"
     >
       <LogoIcon />
       <nav aria-label="desktopNavigation" class="3xl:gap-12 hidden gap-7 xl:flex 2xl:gap-11">
-        <LinkButton>Home</LinkButton>
+        <LinkButton link="#home" :is-active="globalStore.activeSection === 'home'">Home</LinkButton>
         <LinkButton :with-arrow="true">O nas</LinkButton>
-        <LinkButton :with-arrow="true">Nasze Inwestycje</LinkButton>
-        <LinkButton>Poradnik</LinkButton>
-        <LinkButton>Wynajmij</LinkButton>
+        <LinkButton
+          link="#textInvestments"
+          :with-arrow="true"
+          :is-active="globalStore.activeSection === 'investments'"
+        >
+          Nasze Inwestycje
+        </LinkButton>
+        <LinkButton link="#textTutorials" :is-active="globalStore.activeSection === 'tutorials'">
+          Poradnik
+        </LinkButton>
+        <LinkButton link="#contact" :is-active="globalStore.activeSection === 'contact'">
+          Wynajmij
+        </LinkButton>
       </nav>
 
       <BaseButton :is-blue="true" :is-smaller="true" icon="arrow" class="hidden xl:flex">
@@ -27,11 +37,13 @@
       :class="isMenuOpen ? 'translate-y-0' : '-translate-y-[400px]'"
     >
       <div class="flex flex-col gap-7">
-        <LinkButton>Home</LinkButton>
-        <LinkButton :with-arrow="true">O nas</LinkButton>
-        <LinkButton :with-arrow="true">Nasze Inwestycje</LinkButton>
-        <LinkButton>Poradnik</LinkButton>
-        <LinkButton>Wynajmij</LinkButton>
+        <LinkButton link="#home" @click="isMenuOpen = false">Home</LinkButton>
+        <LinkButton link="#textInvestments" :with-arrow="true" @click="isMenuOpen = false">
+          O nas
+        </LinkButton>
+        <LinkButton :with-arrow="true" @click="isMenuOpen = false">Nasze Inwestycje</LinkButton>
+        <LinkButton link="#textTutorials" @click="isMenuOpen = false">Poradnik</LinkButton>
+        <LinkButton link="#contact" @click="isMenuOpen = false">Wynajmij</LinkButton>
       </div>
       <div class="w-full">
         <BaseButton :is-blue="true">
@@ -47,7 +59,10 @@ import LogoIcon from '@/components/icons/LogoIcon.vue';
 import BaseIcon from '@/components/icons/BaseIcon.vue';
 import BaseButton from '@/components/buttons/BaseButton.vue';
 import LinkButton from '@/components/buttons/LinkButton.vue';
+import { useGlobalStore } from '@/stores/globalStore';
 import { ref, type Ref } from 'vue';
+
+const globalStore = useGlobalStore();
 
 const isMenuOpen: Ref<boolean> = ref(false);
 </script>
