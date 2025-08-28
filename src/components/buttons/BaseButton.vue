@@ -22,7 +22,7 @@ import BaseIcon from '@/components/icons/BaseIcon.vue';
 const props = defineProps({
   isBlue: {
     type: Boolean,
-    default: true,
+    default: false,
   },
   isWhite: {
     type: Boolean,
