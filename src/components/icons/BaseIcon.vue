@@ -1,5 +1,5 @@
 <template>
-  <component :is="iconComponent" :class="iconColor" />
+  <component :is="iconComponent" :class="iconColor" data-test="BaseIconRoot" />
 </template>
 
 <script setup lang="ts">

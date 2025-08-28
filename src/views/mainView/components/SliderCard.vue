@@ -2,13 +2,21 @@
   <div
     class="border-stroke flex flex-col overflow-hidden rounded-lg border lg:flex-row-reverse xl:gap-13"
   >
-    <img :src="imgSrc" :alt="header" class="object-cover lg:w-[55%] xl:object-fill 2xl:w-[738px]" />
+    <img
+      :src="imgSrc"
+      :alt="header"
+      class="object-cover lg:w-[55%] xl:object-fill 2xl:w-[738px]"
+      data-test="SliderCardImg"
+    />
     <div class="flex flex-col gap-5 p-10 xl:justify-end xl:p-14">
-      <span class="text-dark d-headline-h5 flex items-center gap-5 xl:mt-11">
+      <span
+        class="text-dark d-headline-h5 flex items-center gap-5 xl:mt-11"
+        data-test="SliderCardLocation"
+      >
         <InteractiveIcon icon="location" />{{ location }}
       </span>
-      <h2 class="text-dark d-headline-h2">{{ header }}</h2>
-      <p class="d-body-regular-l text-text">
+      <h2 class="text-dark d-headline-h2" data-test="SliderCardHeader">{{ header }}</h2>
+      <p class="d-body-regular-l text-text" data-test="SliderCardDescription">
         {{ description }}
       </p>
       <div class="pt-8 lg:pt-13">
@@ -19,6 +27,7 @@
           @click="emit('prevClick')"
           class="border-dark flex h-[53px] w-[53px] cursor-pointer items-center justify-center rounded-full border"
           :class="isFirstSlide ? 'opacity-20' : ''"
+          data-test="SliderCardPrevBtn"
         >
           <BaseIcon name="slideArrow" color="dark" class="rotate-180" />
         </button>
@@ -26,6 +35,7 @@
           @click="emit('nextClick')"
           class="border-dark flex h-[53px] w-[53px] cursor-pointer items-center justify-center rounded-full border"
           :class="isLastSlide ? 'opacity-20' : ''"
+          data-test="SliderCardNextBtn"
         >
           <BaseIcon name="slideArrow" color="dark" />
         </button>

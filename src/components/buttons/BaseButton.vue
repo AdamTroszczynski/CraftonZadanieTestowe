@@ -2,9 +2,15 @@
   <button
     class="d-headline-h5 flex w-full cursor-pointer items-center justify-center gap-5 rounded-full uppercase duration-300 xl:w-auto"
     :class="setClasses"
+    data-test="BaseButtonRoot"
   >
     <slot />
-    <BaseIcon v-if="icon" :name="icon" :color="isBlue ? 'white' : 'dark'" />
+    <BaseIcon
+      v-if="icon"
+      :name="icon"
+      :color="isBlue ? 'white' : 'dark'"
+      data-test="BaseButtonIcon"
+    />
   </button>
 </template>
 
@@ -16,7 +22,7 @@ import BaseIcon from '@/components/icons/BaseIcon.vue';
 const props = defineProps({
   isBlue: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   isWhite: {
     type: Boolean,

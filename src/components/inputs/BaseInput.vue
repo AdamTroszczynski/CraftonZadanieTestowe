@@ -2,6 +2,7 @@
   <label
     class="d-headline-h6 flex w-full flex-col gap-5 uppercase"
     :class="isDisabled ? 'text-stroke-on-dark' : 'text-text'"
+    data-test="BaseInputLabel"
   >
     {{ label }}
     <input
@@ -14,6 +15,7 @@
       :disabled="isDisabled"
       class="d-body-regular-l rounded-sm border bg-white p-6 focus:outline-none"
       :class="setInputClasses"
+      data-test="BaseInputRoot"
     />
     <textarea
       v-else
@@ -24,6 +26,7 @@
       :disabled="isDisabled"
       class="d-body-regular-l min-h-[152px] rounded-sm border bg-white p-6 focus:outline-none"
       :class="setInputClasses"
+      data-test="BaseInputTextarea"
     ></textarea>
   </label>
 </template>
